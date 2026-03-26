@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: jobtracker-db
+    environment:
+      POSTGRES_DB: jobtracker
+      POSTGRES_USER: kavya
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5433:5432"
